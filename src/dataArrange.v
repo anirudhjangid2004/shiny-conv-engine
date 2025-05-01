@@ -4,9 +4,6 @@
 // Comments: This module will input the rows of input matrix one by one and 
 //           will output same no. of elements as in a row but in an arranged
 //           manner as required for MAC.
-// 
-// Working tested, <AJ> 23/02/2025
-// Finally well working 22/04/2025
 //
 //////////////////////////////////////////////////////////////////////////////////
 
