@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-// Final processing element 23/02/2025
+// Final processing element, responsible for MAC operations. Have memory(only calculates values with high enable until required number of operations are performed)
 
 module MAC_PE #(
     parameter resolution = 8,
