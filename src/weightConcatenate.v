@@ -1,15 +1,15 @@
 `timescale 1 ns/1 ps
 
 module weightConcatenate #(
-    parameter N = 3,  // Matrix size (N x N)
-    parameter WIDTH = 8 // Bit width of each element in a row
+    parameter N = 3,
+    parameter WIDTH = 8 
 )(
     input wire clk,
     input wire rst,
-    input wire [N*WIDTH-1:0] row_in,  // Input row (concatenated N elements)
-    input wire row_valid, // Indicates valid input row
-    output reg [N*N*WIDTH-1:0] concatenated_out, // Final concatenated row
-    output reg valid // Output valid signal
+    input wire [N*WIDTH-1:0] row_in,
+    input wire row_valid, 
+    output reg [N*N*WIDTH-1:0] concatenated_out, 
+    output reg valid 
 );
 
     reg [N*N*WIDTH-1:0] buffer;

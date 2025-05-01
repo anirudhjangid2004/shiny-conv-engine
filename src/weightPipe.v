@@ -1,7 +1,8 @@
 `timescale 1ns / 1ps
 
 /*
-    WOrking Jangid tested at 18 48 on 06/04/2025
+    This module is responsible for handling the entries of 
+    the kernel matrix.
 */
 
 module weightPipe #( 
