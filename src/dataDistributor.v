@@ -1,15 +1,10 @@
 `timescale 1ns / 1ps
 
 /*
-    Seems to be working man, 26/02/25, jb tk read write pointer alag the
-    
-    NEEDS MAJOR CHANGE, WILL REMOVE THE FIFO and place a normal memory with valid bits
-    This will help save energy by reducing the switching process, unlike fifo
-    
-    ALL the changes suggested above are done and now this thing is working
 
-    TO IMPLEMENT:
-    Take care where r_mem_count is going? when r_mem_count is full.
+    This module distributes the amongst shift registers after buffering
+    it into memory. Data is being received from dataArrange unit. One shift
+    register at a time.
 
 */
 
